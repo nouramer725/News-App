@@ -5,7 +5,7 @@ import '../../../model/news_model.dart';
 class NewsTab extends StatelessWidget {
   final Source news;
   final bool isSelected;
-  NewsTab({super.key, required this.news, required this.isSelected});
+  const NewsTab({super.key, required this.news, required this.isSelected});
 
   @override
   Widget build(BuildContext context) {

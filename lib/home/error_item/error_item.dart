@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/utils/app_colors.dart';
 
-import '../../api/api_manager.dart';
-
 class ErrorItem extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
