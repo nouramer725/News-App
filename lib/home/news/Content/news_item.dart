@@ -40,7 +40,13 @@ class NewsItem extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Image.network(news.urlToImage ?? ''),
+              child: Image.network(
+                news.urlToImage ?? '',
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) {
+                  return const Icon(Icons.image_not_supported);
+                },
+              ),
             ),
             Text(
               news.description ?? '',

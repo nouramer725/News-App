@@ -34,7 +34,7 @@ class BottomSheetWidget extends StatelessWidget {
               child: Image.network(urlToImage),
             ),
             Text(
-              "${AppLocalizations.of(context)!.description} : $description",
+              description,
               style: Theme.of(context).textTheme.titleMedium,
             ),
             ElevatedButton(
@@ -43,11 +43,11 @@ class BottomSheetWidget extends StatelessWidget {
                   Theme.of(context).primaryColor,
                 ),
                 padding: WidgetStateProperty.all(
-                  EdgeInsets.symmetric(horizontal: w(15), vertical: h(15)),
+                  EdgeInsets.symmetric(vertical: h(16)),
                 ),
                 shape: WidgetStateProperty.all(
                   RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
               ),
@@ -74,9 +74,7 @@ class BottomSheetWidget extends StatelessWidget {
 
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (_) => WebViewScreen(url: url),
-      ),
+      MaterialPageRoute(builder: (_) => WebViewScreen(url: url)),
     );
   }
 }
