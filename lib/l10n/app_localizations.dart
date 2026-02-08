@@ -200,6 +200,24 @@ abstract class AppLocalizations {
   /// **'Try Again'**
   String get try_again;
 
+  /// No description provided for @title.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get title;
+
+  /// No description provided for @description.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get description;
+
+  /// No description provided for @view_full_article.
+  ///
+  /// In en, this message translates to:
+  /// **'View Full Article'**
+  String get view_full_article;
+
   /// No description provided for @something_went_wrong.
   ///
   /// In en, this message translates to:

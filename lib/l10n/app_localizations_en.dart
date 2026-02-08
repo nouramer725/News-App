@@ -60,5 +60,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get try_again => 'Try Again';
 
   @override
+  String get title => 'Title';
+
+  @override
+  String get description => 'Description';
+
+  @override
+  String get view_full_article => 'View Full Article';
+
+  @override
   String get something_went_wrong => 'Something Went Wrong';
 }

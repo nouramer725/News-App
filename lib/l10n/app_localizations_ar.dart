@@ -60,5 +60,14 @@ class AppLocalizationsAr extends AppLocalizations {
   String get try_again => 'حاول مرة أخرى';
 
   @override
+  String get title => 'عنوان الخبر';
+
+  @override
+  String get description => 'تفاصيل الخبر';
+
+  @override
+  String get view_full_article => 'قراءة المقال كاملًا';
+
+  @override
   String get something_went_wrong => 'حدث خطأ، يرجى المحاولة مرة أخرى';
 }

@@ -16,6 +16,9 @@
   "news_app": "News App",
   "go_to_home":"Go To Home",
   "try_again":"Try Again",
+  "title":"Title",
+  "description":"Description",
+  "view_full_article":"View Full Article",
   "something_went_wrong": "Something Went Wrong"
 
 
