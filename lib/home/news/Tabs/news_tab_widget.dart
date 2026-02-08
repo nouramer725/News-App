@@ -27,8 +27,11 @@ class _NewsTabWidgetState extends State<NewsTabWidget> {
               });
             },
             isScrollable: true,
-            indicatorColor: Theme.of(context).primaryColor,
+            labelColor: Theme.of(context).primaryColor,
+            unselectedLabelColor: Theme.of(context).splashColor,
+            indicatorColor: Theme.of(context).splashColor,
             tabAlignment: TabAlignment.start,
+            dividerColor: Colors.transparent,
             tabs: widget.newsList
                 .map(
                   (source) => NewsTab(

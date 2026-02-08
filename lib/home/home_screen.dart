@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
       ),
       body: FutureBuilder<NewsModel>(
-        future: ApiManager.getNews(),
+        future:  ApiManager.getNews(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return LoadingItem();
