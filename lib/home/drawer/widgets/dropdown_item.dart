@@ -7,14 +7,22 @@ class DropdownItem extends StatelessWidget {
   final String text;
   final String textItem1;
   final String textItem2;
+  final Function()? onTapItem1;
+  final Function()? onTapItem2;
   final Function(dynamic) onChanged;
+  final IconData icon1;
+  final IconData icon2;
 
   const DropdownItem({
     super.key,
     required this.text,
     required this.textItem1,
     required this.textItem2,
+    required this.onTapItem1,
+    required this.onTapItem2,
     required this.onChanged,
+    required this.icon1,
+    required this.icon2,
   });
 
   @override
@@ -29,6 +37,7 @@ class DropdownItem extends StatelessWidget {
         border: Border.all(color: AppColors.whiteColor, width: 2),
       ),
       child: DropdownButton(
+        dropdownColor: AppColors.blackColor,
         underline: SizedBox(),
         hint: Text(
           text,
@@ -37,8 +46,40 @@ class DropdownItem extends StatelessWidget {
         isExpanded: true,
         icon: Icon(Icons.arrow_drop_down),
         items: [
-          DropdownMenuItem(value: 1, child: Text(textItem1)),
-          DropdownMenuItem(value: 2, child: Text(textItem2)),
+          DropdownMenuItem(
+            value: 1,
+            onTap: onTapItem1,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  textItem1,
+                  style: AppText.semiBoldText(
+                    color: AppColors.whiteColor,
+                    fontSize: 14,
+                  ),
+                ),
+                Icon(icon1,color: AppColors.whiteColor,),
+              ],
+            ),
+          ),
+          DropdownMenuItem(
+            value: 2,
+            onTap: onTapItem2,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  textItem2,
+                  style: AppText.semiBoldText(
+                    color: AppColors.whiteColor,
+                    fontSize: 14,
+                  ),
+                ),
+                Icon(icon2,color: AppColors.whiteColor,),
+              ],
+            ),
+          ),
         ],
         onChanged: onChanged,
       ),

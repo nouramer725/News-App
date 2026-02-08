@@ -14,6 +14,9 @@
   "english": "English",
   "arabic": "Arabic",
   "news_app": "News App",
-  "go_to_home":"Go To Home"
+  "go_to_home":"Go To Home",
+  "try_again":"Try Again",
+  "something_went_wrong": "Something Went Wrong"
+
 
 }

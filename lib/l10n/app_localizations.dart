@@ -193,6 +193,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Go To Home'**
   String get go_to_home;
+
+  /// No description provided for @try_again.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get try_again;
+
+  /// No description provided for @something_went_wrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something Went Wrong'**
+  String get something_went_wrong;
 }
 
 class _AppLocalizationsDelegate

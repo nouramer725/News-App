@@ -55,4 +55,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get go_to_home => 'الانتقال إلى الرئيسية';
+
+  @override
+  String get try_again => 'حاول مرة أخرى';
+
+  @override
+  String get something_went_wrong => 'حدث خطأ، يرجى المحاولة مرة أخرى';
 }
