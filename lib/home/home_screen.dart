@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/api/api_manager.dart';
 import 'package:news_app/home/category_screen/category.dart';
-import 'package:news_app/home/category_screen/category_fragment.dart';
 import 'package:news_app/home/error_item/error_item.dart';
 import 'package:news_app/home/loading_item/loading_item.dart';
 import 'package:news_app/home/news/Tabs/news_tab_widget.dart';
@@ -13,7 +12,7 @@ import 'drawer/drawer_widget.dart';
 class HomeScreen extends StatelessWidget {
   final Category category;
 
-  HomeScreen({super.key, required this.category});
+  const HomeScreen({super.key, required this.category});
 
   @override
   Widget build(BuildContext context) {
