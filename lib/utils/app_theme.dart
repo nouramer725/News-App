@@ -22,6 +22,7 @@ class AppTheme {
       bodyLarge: AppText.mediumText(color: AppColors.blackColor, fontSize: 24),
       bodyMedium: AppText.mediumText(color: AppColors.blackColor, fontSize: 20),
       titleMedium: AppText.mediumText(color: AppColors.whiteColor, fontSize: 16),
+      titleLarge: AppText.boldText(color: AppColors.whiteColor, fontSize: 30),
 
     ),
   );
@@ -45,6 +46,8 @@ class AppTheme {
       bodyLarge: AppText.mediumText(color: AppColors.whiteColor, fontSize: 24),
       bodyMedium: AppText.mediumText(color: AppColors.whiteColor, fontSize: 20),
       titleMedium: AppText.mediumText(color: AppColors.blackColor, fontSize: 16),
+      titleLarge: AppText.boldText(color: AppColors.blackColor, fontSize: 30),
+
     ),
   );
 }

@@ -6,6 +6,7 @@ import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/provider/app_theme_provider.dart';
 import 'package:news_app/utils/app_assets.dart';
 import 'package:news_app/utils/app_colors.dart';
+import 'package:news_app/utils/app_routes.dart';
 import 'package:news_app/utils/responsive.dart';
 import 'package:provider/provider.dart';
 import '../../provider/app_language_provider.dart';
@@ -36,9 +37,18 @@ class DrawerWidget extends StatelessWidget {
               ),
             ),
           ),
-          DrawerItem(
-            text: AppLocalizations.of(context)!.go_to_home,
-            image: AppAssets.home,
+          InkWell(
+            onTap: () {
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                AppRoutes.categoryScreenName,
+                (route) => false,
+              );
+            },
+            child: DrawerItem(
+              text: AppLocalizations.of(context)!.go_to_home,
+              image: AppAssets.home,
+            ),
           ),
           DividerItem(),
           DrawerItem(

@@ -7,9 +7,10 @@ import 'package:news_app/model/news_model.dart';
 import 'package:news_app/model/news_response.dart';
 
 class ApiManager {
-  static Future<NewsModel> getNews() async {
+  static Future<NewsModel> getNews(String category) async {
     Uri url = Uri.https(ApiConstants.baseUrl, ApiEndPoints.sourceApi, {
       'apiKey': ApiConstants.apiKey,
+      'category': category,
     });
     try {
       var response = await http.get(url);
@@ -25,6 +26,17 @@ class ApiManager {
     Uri url = Uri.https(ApiConstants.baseUrl, ApiEndPoints.everythingApi, {
       'apiKey': ApiConstants.apiKey,
       'sources': sourceId,
+    });
+
+    var response = await http.get(url);
+    var json = jsonDecode(response.body);
+    return NewsResponse.fromJson(json);
+  }
+
+  static Future<NewsResponse> searchForNews(String query) async {
+    Uri url = Uri.https(ApiConstants.baseUrl, ApiEndPoints.everythingApi, {
+      'apiKey': ApiConstants.apiKey,
+      'q': query,
     });
 
     var response = await http.get(url);

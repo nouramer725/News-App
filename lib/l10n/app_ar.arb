@@ -1,12 +1,16 @@
 {
-  "good_morning": "صباح الخير",
-  "here_is_news_for_you": "إليك الأخبار الخاصة بك",
+  "good_morning": "صباح الخير\nإليك بعض الأخبار من أجلك",
+  "no_news_found": "لا توجد اخبار",
+  "search": "بحث",
+  "type_something": "اكتب شئ للبحث",
   "general": "عام",
+  "home": "الرئيسية",
   "sport": "رياضة",
   "health": "الصحة",
   "business": "الأعمال",
   "entertainment": "ترفيه",
   "science": "العلوم",
+  "technology": "تكنولوجيا",
   "language": "اللغة",
   "theme": "المظهر",
   "light": "فاتح",
@@ -19,5 +23,6 @@
   "title": "عنوان الخبر",
   "description": "تفاصيل الخبر",
   "view_full_article": "قراءة المقال كاملًا",
+  "view_all":"عرض الكل",
   "something_went_wrong": "حدث خطأ، يرجى المحاولة مرة أخرى"
 }

@@ -9,13 +9,22 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get good_morning => 'صباح الخير';
+  String get good_morning => 'صباح الخير\nإليك بعض الأخبار من أجلك';
 
   @override
-  String get here_is_news_for_you => 'إليك الأخبار الخاصة بك';
+  String get no_news_found => 'لا توجد اخبار';
+
+  @override
+  String get search => 'بحث';
+
+  @override
+  String get type_something => 'اكتب شئ للبحث';
 
   @override
   String get general => 'عام';
+
+  @override
+  String get home => 'الرئيسية';
 
   @override
   String get sport => 'رياضة';
@@ -31,6 +40,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get science => 'العلوم';
+
+  @override
+  String get technology => 'تكنولوجيا';
 
   @override
   String get language => 'اللغة';
@@ -67,6 +79,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get view_full_article => 'قراءة المقال كاملًا';
+
+  @override
+  String get view_all => 'عرض الكل';
 
   @override
   String get something_went_wrong => 'حدث خطأ، يرجى المحاولة مرة أخرى';

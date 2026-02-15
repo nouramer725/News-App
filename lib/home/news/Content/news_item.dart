@@ -28,7 +28,7 @@ class NewsItem extends StatelessWidget {
         );
       },
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: w(16), vertical: h(16)),
+        margin: EdgeInsets.symmetric(horizontal: w(16), vertical: h(10)),
         padding: EdgeInsets.symmetric(horizontal: w(10), vertical: h(10)),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),

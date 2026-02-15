@@ -9,13 +9,22 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get good_morning => 'Good Morning';
+  String get good_morning => 'Good Morning\nHere is Some News For You';
 
   @override
-  String get here_is_news_for_you => 'Here is news for you';
+  String get no_news_found => 'No News Found';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get type_something => 'Type something to search';
 
   @override
   String get general => 'General';
+
+  @override
+  String get home => 'Home';
 
   @override
   String get sport => 'Sport';
@@ -31,6 +40,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get science => 'Science';
+
+  @override
+  String get technology => 'Technology';
 
   @override
   String get language => 'Language';
@@ -67,6 +79,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get view_full_article => 'View Full Article';
+
+  @override
+  String get view_all => 'View All';
 
   @override
   String get something_went_wrong => 'Something Went Wrong';

@@ -7,7 +7,7 @@ class AppAssets {
 
   /// Categories
   static const String health = 'assets/images/health.png';
-  static const String business = 'assets/images/business.png';
+  static const String business = 'assets/images/bussiness.png';
   static const String entertainment = 'assets/images/entertainment.png';
   static const String general = 'assets/images/general.png';
   static const String sport = 'assets/images/sport.png';

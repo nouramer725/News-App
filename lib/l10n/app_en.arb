@@ -1,12 +1,16 @@
 {
-  "good_morning": "Good Morning",
-  "here_is_news_for_you": "Here is news for you",
+  "good_morning": "Good Morning\nHere is Some News For You",
+  "no_news_found": "No News Found",
+  "search": "Search",
+  "type_something": "Type something to search",
   "general": "General",
+  "home": "Home",
   "sport": "Sport",
   "health": "Health",
   "business": "Business",
   "entertainment": "Entertainment",
   "science": "Science",
+  "technology": "Technology",
   "language": "Language",
   "theme": "Theme",
   "light": "Light",
@@ -19,6 +23,7 @@
   "title":"Title",
   "description":"Description",
   "view_full_article":"View Full Article",
+  "view_all":"View All",
   "something_went_wrong": "Something Went Wrong"
 
 

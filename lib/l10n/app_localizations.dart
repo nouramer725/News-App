@@ -101,20 +101,38 @@ abstract class AppLocalizations {
   /// No description provided for @good_morning.
   ///
   /// In en, this message translates to:
-  /// **'Good Morning'**
+  /// **'Good Morning\nHere is Some News For You'**
   String get good_morning;
 
-  /// No description provided for @here_is_news_for_you.
+  /// No description provided for @no_news_found.
   ///
   /// In en, this message translates to:
-  /// **'Here is news for you'**
-  String get here_is_news_for_you;
+  /// **'No News Found'**
+  String get no_news_found;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @type_something.
+  ///
+  /// In en, this message translates to:
+  /// **'Type something to search'**
+  String get type_something;
 
   /// No description provided for @general.
   ///
   /// In en, this message translates to:
   /// **'General'**
   String get general;
+
+  /// No description provided for @home.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get home;
 
   /// No description provided for @sport.
   ///
@@ -145,6 +163,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Science'**
   String get science;
+
+  /// No description provided for @technology.
+  ///
+  /// In en, this message translates to:
+  /// **'Technology'**
+  String get technology;
 
   /// No description provided for @language.
   ///
@@ -217,6 +241,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'View Full Article'**
   String get view_full_article;
+
+  /// No description provided for @view_all.
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get view_all;
 
   /// No description provided for @something_went_wrong.
   ///
