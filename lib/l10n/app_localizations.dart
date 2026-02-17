@@ -248,6 +248,12 @@ abstract class AppLocalizations {
   /// **'View All'**
   String get view_all;
 
+  /// No description provided for @no_tabs_av.
+  ///
+  /// In en, this message translates to:
+  /// **'No tabs available'**
+  String get no_tabs_av;
+
   /// No description provided for @something_went_wrong.
   ///
   /// In en, this message translates to:

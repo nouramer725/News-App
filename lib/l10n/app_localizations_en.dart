@@ -84,5 +84,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get view_all => 'View All';
 
   @override
+  String get no_tabs_av => 'No tabs available';
+
+  @override
   String get something_went_wrong => 'Something Went Wrong';
 }

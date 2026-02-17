@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/home/news/Content/news_widget.dart';
 import 'package:news_app/home/news/Tabs/news_tab.dart';
+import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/model/news_model.dart';
 
 class NewsTabWidget extends StatefulWidget {
@@ -16,6 +17,14 @@ class _NewsTabWidgetState extends State<NewsTabWidget> {
 
   @override
   Widget build(BuildContext context) {
+    if (widget.newsList.isEmpty) {
+      return Center(
+        child: Text(
+          AppLocalizations.of(context)!.no_tabs_av,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+      );
+    }
     return DefaultTabController(
       length: widget.newsList.length,
       child: Column(

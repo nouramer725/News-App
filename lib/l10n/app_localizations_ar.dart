@@ -84,5 +84,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get view_all => 'عرض الكل';
 
   @override
+  String get no_tabs_av => 'لا توجد عنواين واضحة';
+
+  @override
   String get something_went_wrong => 'حدث خطأ، يرجى المحاولة مرة أخرى';
 }

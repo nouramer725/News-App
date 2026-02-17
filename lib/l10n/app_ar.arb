@@ -24,5 +24,6 @@
   "description": "تفاصيل الخبر",
   "view_full_article": "قراءة المقال كاملًا",
   "view_all":"عرض الكل",
+  "no_tabs_av":"لا توجد عنواين واضحة",
   "something_went_wrong": "حدث خطأ، يرجى المحاولة مرة أخرى"
 }

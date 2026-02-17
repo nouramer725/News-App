@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:news_app/model/news_response.dart';
 import 'package:news_app/utils/responsive.dart';
 import 'package:timeago/timeago.dart' as timeago;
-
 import 'bottom_sheet_widget.dart';
 
 class NewsItem extends StatelessWidget {
